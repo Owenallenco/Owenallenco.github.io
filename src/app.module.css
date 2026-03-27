@@ -1,0 +1,45 @@
+
+.page1Container {
+  position: relative;
+  background-image: url("./assets/WEBSITEBACKGROUND.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+
+.page1Links{
+  color: white;
+  padding-right: 100px;
+  padding-left: 100px;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+  .page1Links a {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 52px;
+    color: white;
+    text-decoration: none;
+  }
+
+.owenAllenLogo{ 
+  position: absolute;
+    top: 50%;
+    left: 50%;
+  transform: translate(-50%, -50%);
+
+  align-self: center;
+justify-self: center;
+width: 400px;
+height: auto;
+}
+
+.page1footer{
+display: flex;
+}
+
+
+
