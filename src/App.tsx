@@ -6,7 +6,7 @@ import Work from "./pages/Work"
 import About from "./pages/About"
 import Contact from "./pages/Contact"
 import owenAllenLogo from "../src/assets/OWENALLEN_LOGO.svg"
-import cornerAnimation from "../src/assets/lotties/cornerAnimation.json"
+import cornerAnimation from "../src/assets/lotties/newCircle.json"
 import resume from "../src/assets/resumeIcon.png"
 
 function App() {
@@ -31,8 +31,8 @@ function App() {
         </div>
 
         <div className={styles.page1footer}>
-          <img src={resume} alt="resume" />
-          <DotLottieReact data={cornerAnimation} loop autoplay />
+          <img className={styles.resumeIcon} src={resume} alt="resume" />
+          <DotLottieReact className={styles.cornerAnimation} data={cornerAnimation} loop autoplay />
         </div>
 
       </section>
