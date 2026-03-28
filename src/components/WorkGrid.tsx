@@ -1,9 +1,12 @@
-import { DotLottieReact } from '@lottiefiles/dotlottie-react'
+//import { DotLottieReact } from '@lottiefiles/dotlottie-react'
 import styles from './WorkGrid.module.css'
-import newspaper from "../assets/Schattschneider_Newspaper_Project.png"
+//import newspaper from "../assets/Schattschneider_Newspaper_Project.png"
 import weShallOvercome from "../assets/weShallOverCome.png"
-import konaHover from "../assets/lotties/konaNew.json"
+import konaHover from "../assets/videos/kona4.mp4"
 
+
+
+//        <DotLottieReact data={konaHover} loop autoplay style={{ width: '100%', height: '100%' }} />
 
 export default function WorkGrid() {
   return (
@@ -14,11 +17,10 @@ export default function WorkGrid() {
       </div>
 
       <div className={styles.b}>
-        <DotLottieReact data={konaHover} loop autoplay style={{ width: '100%', height: '100%' }} />
+        <video src={konaHover} autoPlay muted loop playsInline></video>
       </div>
 
       <div className={styles.c}>
-        <img src={newspaper} />
       </div>
 
       <div className={styles.d}>

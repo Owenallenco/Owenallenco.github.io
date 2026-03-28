@@ -16,7 +16,6 @@
 .d { grid-area: d; overflow: hidden; background: black; }
 .e { grid-area: e; overflow: hidden; background: black; }
 
-/* Cell A - we shall overcome poster, show full image */
 .a img {
   width: 100%;
   height: 100%;
