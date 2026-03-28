@@ -1,13 +1,13 @@
 import styles from "../src/app.module.css"
 import { Routes, Route } from 'react-router-dom'
 import { Link } from 'react-router-dom'
-import Lottie from 'lottie-react'
+import { DotLottieReact } from '@lottiefiles/dotlottie-react'
 import Work from "./pages/Work"
 import About from "./pages/About"
 import Contact from "./pages/Contact"
 import owenAllenLogo from "../src/assets/OWENALLEN_LOGO.svg"
 import cornerAnimation from "../src/assets/lotties/cornerAnimation.json"
-
+import resume from "../src/assets/resumeIcon.png"
 
 function App() {
   return (
@@ -31,8 +31,8 @@ function App() {
         </div>
 
         <div className={styles.page1footer}>
-
-          <Lottie animationData={cornerAnimation} loop={true} />
+          <img src={resume} alt="resume" />
+          <DotLottieReact data={cornerAnimation} loop autoplay />
         </div>
 
       </section>
