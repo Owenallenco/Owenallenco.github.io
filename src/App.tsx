@@ -36,6 +36,18 @@ function App() {
       </section>
 
       <section id="about" className={styles.page3Container}>
+
+        <h1 className={styles.aboutHeader}>about</h1>
+
+        <div className={styles.aboutContainer}>
+          <div></div>
+          <div className={styles.socialLinks}></div>
+        </div>
+
+
+        <footer></footer>
+
+
       </section>
 
       <section id="contact" className={styles.page4Container}>
