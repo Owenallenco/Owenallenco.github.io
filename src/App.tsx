@@ -18,6 +18,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
 
+
       <section className={styles.page1Container}>
 
         <ul className={styles.page1Links}>
@@ -34,9 +35,15 @@ function App() {
           <img className={styles.resumeIcon} src={resume} alt="resume" />
           <DotLottieReact className={styles.cornerAnimation} data={cornerAnimation} loop autoplay />
         </div>
+      </section>
+
+
+      <section className={styles.page2Container}>
+
+
 
       </section>
-    </>
+    </ >
   )
 }
 
