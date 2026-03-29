@@ -35,7 +35,12 @@ function App() {
         <WorkGrid></WorkGrid>
       </section>
 
-      <section id="about" className={styles.page3Container}>
+      <section id="work" className={styles.page2Container}>
+        <WorkGrid></WorkGrid>
+      </section>
+
+
+      <section id="about" className={styles.page4Container}>
 
         <h1 className={styles.aboutHeader}>about</h1>
 
