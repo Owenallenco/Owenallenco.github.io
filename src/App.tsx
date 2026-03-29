@@ -5,6 +5,11 @@ import cornerAnimation from "./assets/lotties/CIRCLE_ANIMATION_OPTIMIZED2.json"
 import resumeIcon from "./assets/RESUME-ICON.svg"
 import resumePdf from "./assets/owenSchattschneiderResume.pdf"
 import WorkGrid from "./components/WorkGrid"
+import weShallOvercome from "./assets/weShallOverCome.png"
+import konaHover from "./assets/videos/kona4.mp4"
+import projectDemo from "./assets/videos/productDemo.mp4"
+import scoota from "./assets/videos/SCootaAssembeGlow.mp4"
+import clutch from "./assets/clutch.png"
 
 
 function App() {
@@ -32,11 +37,23 @@ function App() {
       </section>
 
       <section id="work" className={styles.page2Container}>
-        <WorkGrid></WorkGrid>
+        <WorkGrid
+          a={<img src={weShallOvercome} />}
+          b={<video src={konaHover} autoPlay muted loop playsInline />}
+          c={<img src={clutch} />}
+          d={<video src={scoota} autoPlay muted loop playsInline />}
+          e={<video src={projectDemo} autoPlay muted loop playsInline />}
+        />
       </section>
 
       <section id="work" className={styles.page2Container}>
-        <WorkGrid></WorkGrid>
+        <WorkGrid
+          a={<img src={weShallOvercome} />}
+          b={<video src={konaHover} autoPlay muted loop playsInline />}
+          c={<img src={clutch} />}
+          d={<video src={scoota} autoPlay muted loop playsInline />}
+          e={<video src={projectDemo} autoPlay muted loop playsInline />}
+        />
       </section>
 
 
