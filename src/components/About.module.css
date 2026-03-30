@@ -64,6 +64,20 @@
   border: 5px solid white;
   border-radius: 75px;
   background: transparent;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.tvInner h1 {
+  color: white;
+}
+
+.tvInner p {
+  color: white;
+font-size: 28px;
 }
 
 .tvDots {
@@ -72,14 +86,13 @@
   width: 88%;
 }
 
-.dot {
+.socialLink {
   width: 44px;
   height: 44px;
-  border-radius: 50%;
-  background: white;
 }
 
 .footer {
+  opacity: 80%;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -105,21 +118,21 @@
 }
 
 .contactLabel {
-  font-size: 38px;
+  font-size: 40px;
   color: white;
   line-height: 1;
   white-space: nowrap;
 }
 
 .contactEmail {
-  font-size: 26px;
+  font-size: 40px;
   color: white;
   line-height: 1;
   white-space: nowrap;
 }
 
 .contactPhone {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
   color: white;
   line-height: 1;
