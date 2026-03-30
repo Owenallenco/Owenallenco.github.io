@@ -1,5 +1,7 @@
 import styles from './About.module.css'
 import owenPortrait from '../assets/owenPortrait.png'
+import clouds from "../assets/Clouds.svg"
+
 
 export default function About() {
   return (
