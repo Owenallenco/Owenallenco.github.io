@@ -10,7 +10,7 @@ import konaHover from "./assets/videos/kona4.mp4"
 import projectDemo from "./assets/videos/productDemo.mp4"
 import scoota from "./assets/videos/SCootaAssembeGlow.mp4"
 import clutch from "./assets/clutch.png"
-
+import vx1000 from "../src/assets/videos/vx1000.mp4"
 
 function App() {
   return (
@@ -49,7 +49,7 @@ function App() {
       <section id="work" className={styles.page2Container}>
         <WorkGrid
           a={<img src={weShallOvercome} />}
-          b={<video src={konaHover} autoPlay muted loop playsInline />}
+          b={<video src={vx1000} autoPlay muted loop playsInline />}
           c={<img src={clutch} />}
           d={<video src={scoota} autoPlay muted loop playsInline />}
           e={<video src={projectDemo} autoPlay muted loop playsInline />}

@@ -1,12 +1,11 @@
-import { ReactNode } from 'react'
 import styles from './WorkGrid.module.css'
 
 interface WorkGridProps {
-  a?: ReactNode
-  b?: ReactNode
-  c?: ReactNode
-  d?: ReactNode
-  e?: ReactNode
+  a?: any
+  b?: any
+  c?: any
+  d?: any
+  e?: any
 }
 
 export default function WorkGrid({ a, b, c, d, e }: WorkGridProps) {
