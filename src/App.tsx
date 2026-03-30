@@ -5,6 +5,7 @@ import cornerAnimation from "./assets/lotties/CIRCLE_ANIMATION_OPTIMIZED2.json"
 import resumeIcon from "./assets/RESUME-ICON.svg"
 import resumePdf from "./assets/owenSchattschneiderResume.pdf"
 import WorkGrid from "./components/WorkGrid"
+import About from "./components/About"
 import weShallOvercome from "./assets/weShallOverCome.png"
 import konaHover from "./assets/videos/kona4.mp4"
 import projectDemo from "./assets/videos/productDemo.mp4"
@@ -57,19 +58,8 @@ function App() {
       </section>
 
 
-      <section id="about" className={styles.page4Container}>
-
-        <h1 className={styles.aboutHeader}>about</h1>
-
-        <div className={styles.aboutContainer}>
-          <div></div>
-          <div className={styles.socialLinks}></div>
-        </div>
-
-
-        <footer></footer>
-
-
+      <section id="about">
+        <About />
       </section>
 
       <section id="contact" className={styles.page4Container}>
