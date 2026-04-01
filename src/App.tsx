@@ -18,7 +18,11 @@ import billsbbq from "../src/assets/workGridAssets/BILLS_BBQ.png"
 import ownerInfo from "../src/assets/OWNERINFO_PNG.png"
 import rusty from "../src/assets/rusty.mp4"
 import cigar from "../src/assets/cigar.mp4"
-//hello
+//grid 3
+import kavosMenu from "../src/assets/workGridAssets/kavosmenu.png"
+import wyvern from "../src/assets/workGridAssets/wyvern.mp4"
+import constructivist from "../src/assets/workGridAssets/CONSTRUCTIVIST.jpg"
+
 function App() {
   const [showArrow, setShowArrow] = useState(false)
   const homeRef = useRef<HTMLElement>(null)
@@ -85,6 +89,15 @@ function App() {
         />
       </section>
 
+      <section id="work" className={styles.page2Container}>
+        <WorkGrid
+          a={<img src={constructivist} style={{ objectFit: 'cover' }} />}
+          b={<video src={wyvern} autoPlay muted loop playsInline />}
+          c={<img src={kavosMenu} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />}
+          d={<video src={cigar} autoPlay muted loop playsInline />}
+          e={<video src={projectDemo} autoPlay muted loop playsInline />}
+        />
+      </section>
 
       <section id="about">
         <About />
