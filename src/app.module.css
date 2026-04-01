@@ -108,4 +108,30 @@ opacity: 80%;
     text-decoration: none;
   }
 
+@media (max-width: 768px) {
+  .page1Links {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .page1Links a {
+    font-size: 28px;
+  }
+
+  .owenAllenLogo {
+    width: 80vw;
+  }
+
+  .resumeIcon {
+    width: 80px;
+    padding-left: 24px;
+    padding-bottom: 24px;
+  }
+
+  .cornerAnimation {
+    width: 300px;
+    height: 300px;
+  }
+}
+
 
