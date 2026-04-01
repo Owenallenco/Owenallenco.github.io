@@ -11,10 +11,11 @@ export default function About() {
   const [highLightMail, setHighLightMail] = useState<boolean>(false)
 
   const lightMail = () => {
+    navigator.clipboard.writeText('owenschatt@gmail.com')
     setHighLightMail(true)
     setTimeout(() => {
       setHighLightMail(false)
-    }, 3000)
+    }, 1500)
   }
 
   return (
@@ -22,13 +23,17 @@ export default function About() {
 
       <h1 className={styles.header}>about</h1>
 
-
       <div className={styles.tvWrapper}>
         <div className={styles.tvOuter}>
           <div className={styles.tvInner}>
-            <h1> I turn ideas into visuals that hit.</h1>
-            <p>I’m Owen Allen Schattschneider, a multi-medium visual communicator working across design and video.
-              I use digital tools to build sharp, intentional work—and I’m looking for an internship to take it further.</p>
+            <h1>OWEN SCHATTSCHNEIDER</h1>
+            <p>
+              My diverse work experience has finely turned my creative
+              intuition in realizing how much art breathes through our
+              lives. I use digital tools to build sharp, intentional work-and
+              I'm looking for the next opportunity that will further develop
+              my artistic education.
+            </p>
           </div>
         </div>
 
@@ -42,9 +47,10 @@ export default function About() {
             <div className={styles.socialLink}><img src={beehanceSVG} /></div>
           </a>
 
-          <div onClick={() => {
-            lightMail()
-          }} className={styles.socialLink}><img src={mailSVG} /></div>
+          <div style={{ position: 'relative' }}>
+            <div onClick={() => { lightMail() }} className={styles.socialLink}><img src={mailSVG} /></div>
+            {highLightMail && <span className={styles.copiedToast}>email copied!</span>}
+          </div>
 
         </div>
       </div>

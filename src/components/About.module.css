@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Montserrat:wght@400;700&display=swap');
+
 .container {
   position: relative;
   background-color: #595959;
@@ -72,12 +74,16 @@
 }
 
 .tvInner h1 {
+  font-family: 'Montserrat', sans-serif;
+  padding: 0px;
   color: white;
 }
 
 .tvInner p {
+  font-family: 'Montserrat', sans-serif;
   color: white;
-font-size: 28px;
+  font-size: 28px;
+  margin-top: 0;
 }
 
 .tvDots {
@@ -137,6 +143,18 @@ padding-right: 40px;
   color: white;
   line-height: 1;
   white-space: nowrap;
+}
+
+.copiedToast {
+  position: absolute;
+  top: 50%;
+  left: 52px;
+  transform: translateY(-50%);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: white;
+  white-space: nowrap;
+  pointer-events: none;
 }
 
 .contactPhone {
