@@ -22,6 +22,8 @@ import cigar from "../src/assets/cigar.mp4"
 import kavosMenu from "../src/assets/workGridAssets/kavosmenu.png"
 import wyvern from "../src/assets/workGridAssets/wyvern.mp4"
 import constructivist from "../src/assets/workGridAssets/CONSTRUCTIVIST.jpg"
+import paperCrumble from "../src/assets/videos/PAPERCRUMBLE.mp4"
+
 
 function App() {
   const [showArrow, setShowArrow] = useState(false)
@@ -94,7 +96,7 @@ function App() {
           a={<img src={constructivist} style={{ objectFit: 'cover' }} />}
           b={<video src={wyvern} autoPlay muted loop playsInline />}
           c={<img src={kavosMenu} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />}
-          d={<video src={cigar} autoPlay muted loop playsInline />}
+          d={<video src={paperCrumble} autoPlay muted loop playsInline />}
           e={<video src={projectDemo} autoPlay muted loop playsInline />}
         />
       </section>
