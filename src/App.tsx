@@ -18,7 +18,7 @@ import billsbbq from "../src/assets/workGridAssets/BILLS_BBQ.png"
 import ownerInfo from "../src/assets/OWNERINFO_PNG.png"
 import rusty from "../src/assets/rusty.mp4"
 import cigar from "../src/assets/cigar.mp4"
-
+//hello
 function App() {
   const [showArrow, setShowArrow] = useState(false)
   const homeRef = useRef<HTMLElement>(null)
