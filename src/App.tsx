@@ -23,6 +23,7 @@ import kavosMenu from "../src/assets/workGridAssets/kavosmenu.png"
 import wyvern from "../src/assets/workGridAssets/wyvern.mp4"
 import constructivist from "../src/assets/workGridAssets/CONSTRUCTIVIST.jpg"
 import paperCrumble from "../src/assets/videos/PAPERCRUMBLE.mp4"
+import tvboy from "../src/assets/videos/TVBOY02.mp4"
 
 
 function App() {
@@ -97,7 +98,7 @@ function App() {
           b={<video src={wyvern} autoPlay muted loop playsInline />}
           c={<img src={kavosMenu} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />}
           d={<video src={paperCrumble} autoPlay muted loop playsInline />}
-          e={<video src={projectDemo} autoPlay muted loop playsInline />}
+          e={<video src={tvboy} autoPlay muted loop playsInline />}
         />
       </section>
 
