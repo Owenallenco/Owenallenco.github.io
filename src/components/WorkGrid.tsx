@@ -6,9 +6,10 @@ interface WorkGridProps {
   c?: any
   d?: any
   e?: any
+  f?: any
 }
 
-export default function WorkGrid({ a, b, c, d, e }: WorkGridProps) {
+export default function WorkGrid({ a, b, c, d, e, f }: WorkGridProps) {
   return (
     <div className={styles.grid}>
       <div className={styles.a}>{a}</div>
@@ -16,6 +17,7 @@ export default function WorkGrid({ a, b, c, d, e }: WorkGridProps) {
       <div className={styles.c}>{c}</div>
       <div className={styles.d}>{d}</div>
       <div className={styles.e}>{e}</div>
+      <div className={styles.f}>{f}</div>
     </div>
   )
 }

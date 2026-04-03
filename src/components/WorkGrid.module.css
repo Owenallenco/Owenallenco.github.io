@@ -15,6 +15,7 @@
 .c { grid-area: c; overflow: hidden; background: black; }
 .d { grid-area: d; overflow: hidden; background: black; }
 .e { grid-area: e; overflow: hidden; background: black; }
+.f { grid-area: f; overflow: hidden; background: black; }
 
 .grid video::-webkit-media-controls-start-playback-button {
   display: none;
@@ -28,7 +29,7 @@
       "a a"
       "b c"
       "d d"
-      "e e";
+      "e f";
   }
 }
 

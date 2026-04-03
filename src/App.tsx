@@ -24,9 +24,23 @@ import wyvern from "../src/assets/workGridAssets/wyvern.mp4"
 import constructivist from "../src/assets/workGridAssets/CONSTRUCTIVIST.jpg"
 import paperCrumble from "../src/assets/videos/PAPERCRUMBLE.mp4"
 import tvboy from "../src/assets/videos/TVBOY02.mp4"
+import hopeIsPunk from "../src/assets/HOPEISPUNK.mp4"
+import adBanner from "../src/assets/adbanner.mp4"
 
+
+function useMediaQuery(query: string) {
+  const [matches, setMatches] = useState(() => window.matchMedia(query).matches)
+  useEffect(() => {
+    const mq = window.matchMedia(query)
+    const handler = (e: MediaQueryListEvent) => setMatches(e.matches)
+    mq.addEventListener('change', handler)
+    return () => mq.removeEventListener('change', handler)
+  }, [query])
+  return matches
+}
 
 function App() {
+  const isMobile = useMediaQuery('(max-width: 768px)')
   const [showArrow, setShowArrow] = useState(false)
   const homeRef = useRef<HTMLElement>(null)
 
@@ -74,28 +88,38 @@ function App() {
 
       <section id="work" className={styles.page2Container}>
         <WorkGrid
-          a={<img src={weShallOvercome} style={{ width: '100%', height: '100%', objectFit: 'contain' }} />}
-          b={<video src={konaHover} style={{ width: '100%', height: '100%', objectFit: 'cover' }} autoPlay muted loop playsInline />}
+          a={isMobile
+            ? <video src={konaHover} style={{ width: '100%', height: '100%', objectFit: 'cover' }} autoPlay muted loop playsInline />
+            : <img src={weShallOvercome} style={{ width: '100%', height: '100%', objectFit: 'contain' }} />}
+          b={isMobile
+            ? <img src={weShallOvercome} style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+            : <video src={konaHover} style={{ width: '100%', height: '100%', objectFit: 'cover' }} autoPlay muted loop playsInline />}
           c={<img src={clutch} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />}
           d={<video src={cigar} style={{ width: '100%', height: '100%', objectFit: 'cover' }} autoPlay muted loop playsInline />}
           e={<video src={projectDemo} style={{ width: '100%', height: '100%', objectFit: 'cover' }} autoPlay muted loop playsInline />}
+          f={<img src={billsbbq} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />}
         />
       </section>
 
       <section id="work" className={styles.page2Container}>
         <WorkGrid
-          a={<img src={billsbbq} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />}
-          b={<video src={vx1000} style={{ width: '100%', height: '100%', objectFit: 'cover' }} autoPlay muted loop playsInline />}
+          a={<video src={adBanner} style={{ width: '100%', height: '100%', objectFit: 'contain' }} autoPlay muted loop playsInline />}
+          b={isMobile
+            ? <video src={wyvern} style={{ width: '100%', height: '100%', objectFit: 'cover' }} autoPlay muted loop playsInline />
+            : <video src={vx1000} style={{ width: '100%', height: '100%', objectFit: 'cover' }} autoPlay muted loop playsInline />}
           c={<img src={ownerInfo} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />}
           d={<video src={scoota} style={{ width: '100%', height: '100%', objectFit: 'cover' }} autoPlay muted loop playsInline />}
           e={<video src={rusty} style={{ width: '100%', height: '100%', objectFit: 'cover' }} autoPlay muted loop playsInline />}
+          f={<video src={hopeIsPunk} style={{ width: '100%', height: '100%', objectFit: 'cover' }} autoPlay muted loop playsInline />}
         />
       </section>
 
       <section id="work" className={styles.page2Container}>
         <WorkGrid
           a={<img src={constructivist} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />}
-          b={<video src={wyvern} style={{ width: '100%', height: '100%', objectFit: 'cover' }} autoPlay muted loop playsInline />}
+          b={isMobile
+            ? <video src={vx1000} style={{ width: '100%', height: '100%', objectFit: 'cover' }} autoPlay muted loop playsInline />
+            : <video src={wyvern} style={{ width: '100%', height: '100%', objectFit: 'cover' }} autoPlay muted loop playsInline />}
           c={<img src={kavosMenu} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />}
           d={<video src={paperCrumble} style={{ width: '100%', height: '100%', objectFit: 'cover' }} autoPlay muted loop playsInline />}
           e={<video src={tvboy} style={{ width: '100%', height: '100%', objectFit: 'cover' }} autoPlay muted loop playsInline />}
