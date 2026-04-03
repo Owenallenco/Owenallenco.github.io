@@ -27,7 +27,7 @@ import tvboy from "../src/assets/videos/TVBOY02.mp4"
 import hopeIsPunk from "../src/assets/HOPEISPUNK.mp4"
 import adBanner from "../src/assets/adbanner.mp4"
 import bikeNight from "../src/assets/BIKENIGHTMOCKUP.png"
-
+import newsPapaMan from "../src/assets/NEWSPAPAMAN.png"
 
 function useMediaQuery(query: string) {
   const [matches, setMatches] = useState(() => window.matchMedia(query).matches)
@@ -111,7 +111,7 @@ function App() {
           c={<img src={ownerInfo} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />}
           d={<video src={scoota} style={{ width: '100%', height: '100%', objectFit: 'cover' }} autoPlay muted loop playsInline />}
           e={<video src={rusty} style={{ width: '100%', height: '100%', objectFit: 'cover' }} autoPlay muted loop playsInline />}
-          f={<video src={hopeIsPunk} style={{ width: '100%', height: '100%', objectFit: 'cover' }} autoPlay muted loop playsInline />}
+          f={<img src={newsPapaMan} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />}
         />
       </section>
 
@@ -128,6 +128,7 @@ function App() {
           e={isMobile
             ? <video src={paperCrumble} style={{ width: '100%', height: '100%', objectFit: 'cover' }} autoPlay muted loop playsInline />
             : <video src={tvboy} style={{ width: '100%', height: '100%', objectFit: 'cover' }} autoPlay muted loop playsInline />}
+          f={<video src={hopeIsPunk} style={{ width: '100%', height: '100%', objectFit: 'cover' }} autoPlay muted loop playsInline />}
         />
       </section>
 
